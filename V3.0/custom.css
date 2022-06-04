@@ -1,0 +1,97 @@
+#facebook:hover {
+    background-color: #0043ee;
+    color: white;
+}
+
+#instagram:hover {
+    background: linear-gradient(to right, #ffa631, #ff2600, #ff00cc, #ac01ac);
+    color: white;
+}
+
+#telegram:hover {
+    background-color: #318cc9;
+    color: #fff;
+}
+
+#twitter:hover {
+    background-color: #03d3f8;
+    color: white;
+}
+
+#youtube:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.bg-footer {
+    background: #3d3d3d;   
+}
+
+.bg-sky {
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.card-panel {
+    width: 24vw;
+    height: 30vh;
+    position: inherit;
+    margin: auto;
+    margin-top: 2vh;
+    border-radius: 1rem;
+    background-color: #565c63;
+
+}
+
+.dark-mode {
+    background: #283344;
+    color: white;
+}
+
+.dark-mode .bg-footer {
+    background: #3f4c57;
+}
+
+.dark-mode .bg-sky {
+    background: #3f4c57;
+}
+
+.dark-mode .btn-light:hover {
+    color: #fff;
+    background-color: #01aae8;
+}
+
+.dark-mode .card {
+    background-color: #3f4c57;
+}
+
+.dark-mode .navbar {
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2575e6, #32d9ff, #73efff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2575e6, #3ec1f0, #37e8ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.dark-mode .navbar-text {
+    color: white;
+}
+
+.dark-mode .navbar-text:hover {
+    background-color: #2a7ed8;
+    border-radius: 0.5rem;
+}
+
+.navbar-text:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+    border-radius: 0.5rem;
+}
+
+.rounded-one {
+    border-radius: 1rem !important;
+}
+
