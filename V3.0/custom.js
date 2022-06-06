@@ -27,17 +27,13 @@
     
     // sidenav belum ada efek transisi
     function buttonNav() { 
-        const butonNav = document.getElementById('sideNav');
-        const trans = {
-        'animation' : 'fadein 1s',
-        'display' : 'block',
-        }
-
-        Object.assign(butonNav.style, trans);
+       document.getElementById('sideNav').style.width = '100%' ;
+       document.getElementById('setengahBg').style.opacity = '100%' ;
     }
-    
+        
     function closeNav() {
-        document.getElementById('sideNav').style.display = 'none';
+        document.getElementById('sideNav').style.width = '0';
+        document.getElementById('setengahBg').style.opacity = '0';
     }
 
 
