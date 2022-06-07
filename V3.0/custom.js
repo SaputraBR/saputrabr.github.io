@@ -28,12 +28,12 @@
     // sidenav belum ada efek transisi
     function buttonNav() { 
        document.getElementById('sideNav').style.width = '100%' ;
-       document.getElementById('setengahBg').style.opacity = '100%' ;
+       document.getElementById('sideNav2').style.opacity = '100%' ;
     }
         
     function closeNav() {
         document.getElementById('sideNav').style.width = '0';
-        document.getElementById('setengahBg').style.opacity = '0';
+        document.getElementById('sideNav2').style.opacity = '0';
     }
 
 

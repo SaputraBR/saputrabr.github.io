@@ -1,3 +1,7 @@
+#close:hover {
+    color: rgb(67, 67, 67) !important;
+}
+
 #facebook:hover {
     background-color: #0043ee;
     color: white;
@@ -113,5 +117,16 @@
     background-color: rgba(34, 34, 34, 0.7);
     z-index: 999999;
     display: block;
-    transition: width 0.6s;
+    transition: width 0.4s;
+}
+
+.sidenav2 {
+    width: 60%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0rem 1rem 1rem 0rem;
+    transition: 0.2s;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    display: block;
 }
