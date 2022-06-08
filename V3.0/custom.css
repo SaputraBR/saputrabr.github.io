@@ -1,5 +1,5 @@
 #close:hover {
-    color: rgb(67, 67, 67) !important;
+    color: rgb(97, 97, 97) !important;
 }
 
 #facebook:hover {
@@ -68,6 +68,14 @@
     color: white;
 }
 
+.dark-mode #close {
+    color: white !important;
+}
+
+.dark-mode #close:hover {
+    color: rgb(204, 203, 203) !important;
+}
+
 .dark-mode .bg-footer {
     background: #3f4c57;
 }
@@ -85,6 +93,10 @@
     background-color: #3f4c57;
 }
 
+.dark-mode .nav-link {
+    color: white;
+}
+
 .dark-mode .navbar {
     background: #00d2ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2575e6, #32d9ff, #73efff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -98,6 +110,10 @@
 .dark-mode .navbar-text:hover {
     background-color: #2a7ed8;
     border-radius: 0.5rem;
+}
+
+.dark-mode .sidenav2 {
+    background-color: rgb(112, 110, 110);
 }
 
 .navbar-text:hover {
@@ -123,10 +139,10 @@
 .sidenav2 {
     width: 60%;
     height: 100%;
-    opacity: 0;
+    opacity: 100%;
+    overflow-x: hidden;
     border-radius: 0rem 1rem 1rem 0rem;
     transition: 0.2s;
-    overflow-x: hidden;
     background-color: #f8f9fa;
-    display: block;
+    display: none;
 }
