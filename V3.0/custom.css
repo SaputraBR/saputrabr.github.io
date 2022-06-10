@@ -23,6 +23,11 @@
     -moz-text-fill-color: transparent
 }
 
+#navbarMenu:hover {
+    background-color: #e2e6ea;
+    border-radius: 0.5rem;
+}
+
 #telegram:hover {
     background-color: #318cc9;
     color: #fff;
@@ -74,6 +79,10 @@
 
 .dark-mode #close:hover {
     color: rgb(204, 203, 203) !important;
+}
+
+.dark-mode #navbarMenu:hover {
+    background-color: rgb(75, 75, 75);
 }
 
 .dark-mode .bg-footer {
