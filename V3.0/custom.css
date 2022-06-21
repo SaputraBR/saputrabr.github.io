@@ -70,20 +70,50 @@
 
 .dark-mode {
     background: #283344;
-    color: white;
+    color: #ffffff;
 }
 
 .dark-mode #close {
-    color: white !important;
+    color: #ffffff !important;
 }
 
 .dark-mode #close:hover {
     color: rgb(204, 203, 203) !important;
 }
 
+.dark-mode #facebookSidenav, #instagramSidenav, #twitterSidenav, #youtubeSidenav, #telegramSidenav  {
+    color: #fff;
+}
+
+.dark-mode #facebookSidenav:hover {
+    background-color: #0043ee;
+    border-radius: 50%;
+}
+
+.dark-mode #instagramSidenav:hover {
+    background: linear-gradient(to right, #ffa631, #ff2600, #ff00cc, #ac01ac);
+    border-radius: 50%;
+}
+
 .dark-mode #navbarMenu:hover {
     background-color: rgb(75, 75, 75);
 }
+
+.dark-mode #telegramSidenav:hover {
+    background-color: #318cc9;
+    border-radius: 50%;
+}
+
+.dark-mode #twitterSidenav:hover {
+    background-color: #03d3f8;
+    border-radius: 50%;
+}
+
+.dark-mode #youtubeSidenav:hover {
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
 
 .dark-mode .bg-footer {
     background: #3f4c57;
