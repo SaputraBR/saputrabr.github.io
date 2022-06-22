@@ -25,7 +25,6 @@
 
 #navbarMenu:hover {
     background-color: #e2e6ea;
-    border-radius: 0.5rem;
 }
 
 #telegram:hover {
@@ -81,7 +80,7 @@
     color: rgb(204, 203, 203) !important;
 }
 
-.dark-mode #facebookSidenav, #instagramSidenav, #twitterSidenav, #youtubeSidenav, #telegramSidenav  {
+.dark-mode #facebookSidenav, .dark-mode #instagramSidenav, .dark-mode #twitterSidenav, .dark-mode #youtubeSidenav, .dark-mode #telegramSidenav  {
     color: #fff;
 }
 
