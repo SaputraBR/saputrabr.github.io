@@ -25,7 +25,7 @@
 
 
     
-    // sidenav belum ada efek transisi
+
     function buttonNav() { 
        document.getElementById('sideNav').style.width = '100%' ;
        document.getElementById('sideNav2').style.display = 'block' ;
