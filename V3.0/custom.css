@@ -184,3 +184,8 @@
     background-color: #f8f9fa;
     display: none;
 }
+
+.tag {
+    color: #fff;
+    border-radius: 0.4rem ;
+}
