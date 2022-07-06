@@ -13,7 +13,7 @@
         };
     }
     
-    var rollBack = $('#rollBack');
+    var rollBack = $('#sekrol');
 
     rollBack.on('click', function(e) {
     e.preventDefault();
