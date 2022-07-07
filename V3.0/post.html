@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -131,7 +131,7 @@
                     <div class="d-sm-none d-lg-block" style="position: absolute;left: -2.5rem;top: 0;height: 100%;">
                         <div class="sticky-top text-center" style="top:25vh">
                             <nav>
-                                <a class="d-block mb-3" id="sekrol" role="button" title="kembali ke atas" style="scroll-behavior: smooth;"> 
+                                <a class="d-block mb-3" id="sekrol" role="button" title="kembali ke atas" onclick="sekrolTop()"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                                         <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                                     </svg>
@@ -174,7 +174,10 @@
 
                     <div class="card rounded-lg shadow mt-5 mb-5" id="komentar">
                         <div class="card-body">
-                            <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
+                            <div class="mb-4">
+                                <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
+                                <small>Berikan pendapat atau masukan untuk artikel ini</small>    
+                            </div>
                             <form action="" class="form">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
@@ -236,15 +239,6 @@
                         </div>
                     </div>
                 </aside>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-8">
-                            
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
 

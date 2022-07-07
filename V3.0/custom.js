@@ -13,16 +13,17 @@
         };
     }
     
-    var rollBack = $('#sekrol');
+    var rollBack = $('#rollBack');
 
     rollBack.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop:0})
     });
 
-
-
-
+    function sekrolTop(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
 
     
 
