@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="custom.css"/>
     </head>
 
-    <body>
+    <body class="bg-light">
         <aside class="sidenav d-sm-flex d-lg-none" id="sideNav" onclick="">
             <div class="sidenav2" id="sideNav2">
                 <header class="border-bottom d-flex p-3">
@@ -68,9 +68,9 @@
             </div>
         </aside>
 
-        <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg bg-white sticky-top">
             <div class="container">
-                <a class="navbar-brand font-weight-bold navbar-text" style="text-decoration: none;" href="index.html">
+                <a class="navbar-brand font-weight-bold" style="text-decoration: none;" href="index.html">
                     <img src="iconBlack.png" alt="" width="40" height="40" id="iconBlack">
                     <img src="iconWhite.png" alt="" width="40" height="40" id="iconWhite" hidden>
                 </a>
@@ -125,7 +125,7 @@
         </nav>
 
 
-        <div class="container my-0 my-md-5">
+        <div class="container my-0 my-sm-5 my-md-5">
             <div class="row">
                 <div class="col-sm-12 col-lg-8">
                     <div class="d-sm-none d-lg-block" style="position: absolute;left: -2.5rem;top: 0;height: 100%;">
@@ -136,7 +136,7 @@
                                         <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                                     </svg>
                                 </a>
-                                <a class="d-block" href="#komentar" title="komentar"> 
+                                <a class="d-block" href="#komentar" title="komentar" id="chat"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-quote-fill" viewBox="0 0 16 16">
                                         <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
                                     </svg>
@@ -147,16 +147,16 @@
                     </div>
 
                     <article class="card shadow rounded-lg">
-                        <div class="card-body p-md-4">
-                            <div class="p-5">
+                        <div class="card-body p-sm-2 p-md-4">
+                            <div class="p-sm-4 p-md-5">
                                 <header class="d-inline-flex text-center mb-4">
                                     <small class="mr-2">Admin Ganteng </small>
                                     <small>01 juni 2022</small>
                                 </header>
                                 <h1 class="h1 font-weight-bold mb-3">Apa Itu?</h1>
                                 <div class="d-inline-flex mb-4">
-                                    <a href="#" class="px-2 py-1 mr-1 tag bg-primary">lorem</a>
-                                    <a href="#" class="px-2 py-1 mr-1 tag bg-primary">dolor</a>
+                                    <a href="#" class="px-2 py-1 mr-1 text-white bg-primary" style="text-decoration: none; border-radius: 0.4rem;">lorem</a>
+                                    <a href="#" class="px-2 py-1 mr-1 text-white bg-primary" style="text-decoration: none; border-radius: 0.4rem;">dolor</a>
                                 </div>
                                 <div>
                                     <picture>
@@ -176,20 +176,20 @@
                         <div class="card-body">
                             <div class="mb-4">
                                 <h3 class="h3">Tulis Komentar atau Pertanyaan</h3>
-                                <small>Berikan pendapat atau masukan untuk artikel ini</small>    
+                                <small>Berikan pendapat atau masukan anda untuk artikel ini</small>    
                             </div>
                             <form action="" class="form">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="nama" class="form-control">
+                                    <input type="nama" class="form-control form-control2">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control">
+                                    <input type="email" class="form-control form-control2">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Message</label>
-                                    <textarea name="message" class="form-control" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="message" class="form-control form-control2" id="" cols="30" rows="10"></textarea>
                                 </div>                             
                                 <div class="form-group">
                                     <input type="submit" value="Kirim" class="btn btn-primary w-100">

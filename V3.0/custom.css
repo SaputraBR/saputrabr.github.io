@@ -72,6 +72,14 @@
     color: #ffffff;
 }
 
+.dark-mode #chat, .dark-mode #sekrol {
+    color: #fff;
+}
+
+.dark-mode #chat:hover, .dark-mode #sekrol:hover {
+    color: rgb(201, 201, 201);
+}
+
 .dark-mode #close {
     color: #ffffff !important;
 }
@@ -98,6 +106,10 @@
     background-color: rgb(75, 75, 75);
 }
 
+.dark-mode #biUp:hover {
+    color: rgb(192, 192, 192) !important;
+}
+
 .dark-mode #telegramSidenav:hover {
     background-color: #318cc9;
     border-radius: 50%;
@@ -114,11 +126,7 @@
 }
 
 
-.dark-mode .bg-footer {
-    background: #3f4c57;
-}
-
-.dark-mode .bg-sky {
+.dark-mode .bg-footer, .dark-mode .bg-sky, .dark-mode .card {
     background: #3f4c57;
 }
 
@@ -127,11 +135,7 @@
     background-color: #01aae8;
 }
 
-.dark-mode .card {
-    background-color: #3f4c57;
-}
-
-.dark-mode .nav-link {
+.dark-mode .nav-link, .dark-mode .navbar-text {
     color: white;
 }
 
@@ -139,10 +143,6 @@
     background: #00d2ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2575e6, #32d9ff, #73efff);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2575e6, #3ec1f0, #37e8ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.dark-mode .navbar-text {
-    color: white;
 }
 
 .dark-mode .navbar-text:hover {
@@ -183,9 +183,4 @@
     transition: 0.2s;
     background-color: #f8f9fa;
     display: none;
-}
-
-.tag {
-    color: #fff;
-    border-radius: 0.4rem ;
 }
