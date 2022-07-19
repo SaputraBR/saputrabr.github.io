@@ -126,8 +126,8 @@
 }
 
 
-.dark-mode .bg-footer, .dark-mode .bg-sky, .dark-mode .card {
-    background: #3f4c57;
+.dark-mode .bg-footer, .dark-mode .bg-sky, .dark-mode .card, .dark-mode article{
+    background: #3f4c57 !important;
 }
 
 .dark-mode .btn-light:hover {
