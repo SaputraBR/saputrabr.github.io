@@ -42,6 +42,14 @@
     color: white;
 }
 
+.bg-ensi {
+    background-image: url('mount.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .bg-footer {
     background: #3d3d3d;   
 }
@@ -152,6 +160,23 @@
 
 .dark-mode .sidenav2 {
     background-color: rgb(112, 110, 110);
+}
+
+.ensiklopedia {
+    background-image: url('Underwater.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2vh;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',
+                     helvetica, arial, sans-serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
 }
 
 .navbar-text:hover {
