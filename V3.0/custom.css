@@ -162,14 +162,14 @@
     background-color: rgb(112, 110, 110);
 }
 
-.ensiklopedia {
+.title-header {
     background-image: url('Underwater.jpg');
     background-repeat: repeat;
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 2vh;
-    font-size: 120px;
+    font-size:calc(7vw + 1vh);
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
