@@ -8,6 +8,16 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css"/>
         <link rel="stylesheet" type="text/css" href="custom.css"/>
+        <style>
+            .hook {
+                box-sizing: content-box; 
+                display: flex; 
+                height: 100%; 
+                width: 100%; 
+                position: relative; 
+                transform-style: preserve-3d;
+            };
+        </style>
     </head>
 
     <body class="bg-light">
@@ -121,7 +131,7 @@
         </nav>
 
         <main>
-            <div class="carousel slide" data-ride="carousel" id="slurrppp">
+            <!--<div class="carousel slide" data-ride="carousel" id="slurrppp">
                 <ul class="carousel-indicators">
                     <li data-target="#slurrppp" data-slide-to="0" class="active"></li>
                     <li data-target="#slurrppp" data-slide-to="1"></li>
@@ -141,21 +151,45 @@
                 </div>
 
                 <a style="background: rgba(0, 0, 0, 0.7);" class="carousel-control-prev" href="#slurrppp" data-slide="prev"> 
-                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                    </svg>-->   
+                    </svg>  
                     <span class="carousel-control-prev-icon"></span> 
                 </a>
                 <a class="carousel-control-next" href="#slurrppp" data-slide="next">
-                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>--> 
-                    <span class="carousel-control-next-icon"></span>   
+                    </svg> 
+                    
                 </a>
-            </div>
+            </div>-->
 
-            <section>
-                <div></div>
+            <section class="mt-5 mb-5">
+                <div class="" style="width: 100%; height: auto; margin-top: 0px; margin-left: auto; margin-bottom: 0px; margin-right: auto;">
+                    <a class="carousel-control-prev" href="">
+                        <span class="carousel-control-prev-icon" style="left: 10px; height: 50px; width: 50px; position: absolute; background-color: #000;"></span>
+                    </a>
+                    <div class="hook" style="transform: translate3d(-430px, 0px, 0px); z-index: -10; transition-property: transform; transition-duration: 300ms; transition-timing-function: linear; transition-delay: 0s;">
+                        <div class="" style="width: 390px; height: 520px; flex-shrink: 0; transform: translate3d(420px, 0px, -430px); z-index: -2; transition-property: transform; transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s; opacity: 1;">
+                            <img src="How To Pray Powerful Prayers (Part 2_3).jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="" style="width: 390px; height: 520px; flex-shrink: 0; transform: translate3d(210px, 0px, -215px); z-index: -1; transition-property: transform; transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s; opacity: 1;">
+                            <img src="How To Pray Powerful Prayers (Part 2_3).jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="" style="width: 390px; height: 520px; flex-shrink: 0; opacity: 1; transform: translate3d(0px, 0px, 0px); z-index: 0; transition-property: transform; transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s;">
+                            <img src="How To Pray Powerful Prayers (Part 2_3).jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="" style="width: 390px; height: 520px; flex-shrink: 0; transform: translate3d(-210px, 0px, -215px); z-index: -1; transition-property: transform; transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s; opacity: 1;">
+                            <img src="How To Pray Powerful Prayers (Part 2_3).jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="" style="width: 390px; height: 520px; flex-shrink: 0; transform: translate3d(-420px, 0px, -430px); z-index: -2; transition-property: transform; transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s; opacity: 1;">
+                            <img src="How To Pray Powerful Prayers (Part 2_3).jpg" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <a class="carousel-control-next" href="">
+                        <span class="carousel-control-next-icon" style="right: 10px; height: 50px; width: 50px; position: absolute; background-color: #000;"></span>   
+                    </a>
+                </div>
             </section>
         </main>
 
