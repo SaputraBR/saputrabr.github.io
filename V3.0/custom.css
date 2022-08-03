@@ -72,7 +72,30 @@
     margin-top: 3vh;
     border-radius: 1rem;
     background-color: #565c63;
+}
 
+.carousel-lain-left {
+    height: 50vh;
+    left: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    display: flex;
+    position: absolute;
+}
+
+.carousel-lain-right {
+    height: 50vh;
+    right: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    display: flex;
+    position: absolute;
 }
 
 .dark-mode {
@@ -80,11 +103,13 @@
     color: #ffffff;
 }
 
-.dark-mode #chat, .dark-mode #sekrol {
+.dark-mode #chat,
+.dark-mode #sekrol {
     color: #fff;
 }
 
-.dark-mode #chat:hover, .dark-mode #sekrol:hover {
+.dark-mode #chat:hover,
+.dark-mode #sekrol:hover {
     color: rgb(201, 201, 201);
 }
 
@@ -96,7 +121,11 @@
     color: rgb(204, 203, 203) !important;
 }
 
-.dark-mode #facebookSidenav, .dark-mode #instagramSidenav, .dark-mode #twitterSidenav, .dark-mode #youtubeSidenav, .dark-mode #telegramSidenav  {
+.dark-mode #facebookSidenav,
+.dark-mode #instagramSidenav,
+.dark-mode #twitterSidenav,
+.dark-mode #youtubeSidenav,
+.dark-mode #telegramSidenav  {
     color: #fff;
 }
 
@@ -134,7 +163,10 @@
 }
 
 
-.dark-mode .bg-footer, .dark-mode .bg-sky, .dark-mode .card, .dark-mode article{
+.dark-mode .bg-footer,
+.dark-mode .bg-sky,
+.dark-mode .card,
+.dark-mode article{
     background: #3f4c57 !important;
 }
 
@@ -143,7 +175,8 @@
     background-color: #01aae8;
 }
 
-.dark-mode .nav-link, .dark-mode .navbar-text {
+.dark-mode .nav-link,
+.dark-mode .navbar-text {
     color: white;
 }
 
@@ -208,4 +241,10 @@
     transition: 0.2s;
     background-color: #f8f9fa;
     display: none;
+}
+
+@media (max-width: 1264px) {
+    .img-center {
+        text-align: center;
+    }
 }

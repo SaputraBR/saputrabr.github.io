@@ -13,9 +13,9 @@
         };
     }
     
-    var rollBack = $('#rollBack');
+    var rollBack = document.getElementById('rollBack');
 
-    rollBack.on('click', function(e) {
+    rollBack.addEventListener('click', (e) => {
     e.preventDefault();
     $('html, body').animate({scrollTop:0})
     });
@@ -76,6 +76,9 @@
 
     };
 
+
+
+    
 
    
     
