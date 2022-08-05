@@ -1,5 +1,4 @@
     //tombol kembali ke atas
-
     window.onscroll = function() {backTop()}
 
     function backTop() {
@@ -11,8 +10,10 @@
         } else {
             buttonTop.hidden = true;
         };
-    }
+
+    };
     
+
     var rollBack = document.getElementById('rollBack');
 
     rollBack.addEventListener('click', (e) => {
@@ -62,7 +63,6 @@
             //ikon ganti
             iconBlack.hidden = true;
             iconWhite.hidden = false;
-            document.getElementById('biUp').style.color = 'white';
         } else {
             elemen.setAttribute('class', '');
             localStorage.removeItem('theme');
@@ -71,14 +71,8 @@
             //ikon ganti
             iconBlack.hidden = false;
             iconWhite.hidden = true;
-            document.getElementById('biUp').style.color = '';
         }
-
     };
-
-
-
-    
 
    
     
