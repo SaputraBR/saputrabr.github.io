@@ -73,7 +73,7 @@
         </div>
     </aside>
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow " hidden id="navHidden">
+    <nav class="navbar navbar-expand-lg d-block d-sm-block d-lg-none bg-white sticky-top shadow" id="navHidden">
         <div class="container">
             <a class="navbar-brand font-weight-bold" style="text-decoration: none" href="index.html">
                 <img src="iconBlack.png" alt="" width="40" height="40" id="iconBlack" />
@@ -139,7 +139,7 @@
 
         <nav style="left: 1vw; position: fixed; top: 50%; ">
             <div class="dot-indicators-lain">
-                <a href="#1"></a>
+                <a href="#" onclick="linkSamping()"></a>
             </div>
             <div class="dot-indicators-lain">
                 <a href="#2"></a>
@@ -151,7 +151,7 @@
         </nav>
 
         <section id="1" class="" style="background-image: url('lainnya/1.jpg');background-size: cover; height: 100vh; margin-top: 0;">
-            <div class="container d-sm-none d-lg-flex">
+            <div class="container d-sm-none d-none d-lg-flex">
                 <a class="navbar-brand font-weight-bold" style="text-decoration: none; padding-top: 8vh;" href="index.html">
                     <img src="iconWhite.png" alt="" width="50" height="50" id="iconWhite"/>
                 </a>
@@ -185,13 +185,18 @@
                         <a class="nav-link" style="text-decoration: none; color: #fff;" href="lainnya.html"><b>LAINNYA</b></a>
                     </li>
                 </ul>
-            </div>  
+            </div>
+            
+            <div class="container" style="background-color: rgba(0, 0, 0, 0.5);">
+                
+            </div>
         </section>
-        <div id="hoo"></div>
     
         <section id="2" class="jumbotoron jumbotron-fluid" style="background-image: url('lainnya/2.jpg'); background-size: cover; height: 100vh;"></section>
         <section id="3" class="jumbotoron jumbotron-fluid" style="background-image: url('lainnya/3.jpg'); background-size: cover; height: 100vh;"></section>
+
     </main>
+
 
     <footer class="jumbotron bg-footer mb-0 mt-5">
         <div class="container">
@@ -258,29 +263,25 @@
 
     <script>
 
-    window.onscroll = function() {backTop(), mediaScreen()}
+    window.onscroll = function() {backTop()}
 
     function backTop() {
     
         var navHidden = document.getElementById('navHidden')
 
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navHidden.hidden = false;
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            navHidden.classList.add('d-lg-block');
         } else {
-            navHidden.hidden = true;
+            navHidden.classList.remove('d-lg-block');
         };
 
-    };  
-
-    function mediaScreen() {
-        var navHidden = document.getElementById('navHidden')
-
-        if (window.matchMedia(('min-width: 576px'))) {
-            navHidden.hidden = false;
-        } else {
-            navHidden.hidden = true;
-        };
     };
+    
+    function linkSamping() {
+        var far = document.documentElement('html', 'body');
+
+        far.scrollTop = 0;
+    }
 
     
     </script>

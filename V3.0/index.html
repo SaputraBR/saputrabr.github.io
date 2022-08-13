@@ -277,6 +277,33 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="custom.js"></script>
+
+        <script>
+        //tombol kembali ke atas
+        window.onscroll = function() {backTop()}
+
+        function backTop() {    
+            var buttonTop = document.getElementById('rollBack')
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            buttonTop.hidden = false;
+            } else {
+            buttonTop.hidden = true;
+            };
+        };
+
+        var rollBack = document.getElementById('rollBack');
+
+        rollBack.addEventListener('click', (e) => {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0})
+        });
+
+        if(localStorage.getItem('theme') == 'dark') {
+            document.getElementById('biUp').style.color = 'white';
+        };
+
+        </script>
         
     </body>
 </html>

@@ -1,33 +1,10 @@
-    //tombol kembali ke atas
-    window.onscroll = function() {backTop()}
 
-    function backTop() {
-        
-        var buttonTop = document.getElementById('rollBack')
-
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            buttonTop.hidden = false;
-        } else {
-            buttonTop.hidden = true;
-        };
-
-    };
     
-
-    var rollBack = document.getElementById('rollBack');
-
-    rollBack.addEventListener('click', (e) => {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0})
-    });
-
     function sekrolTop(){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     };
-
     
-
     function buttonNav() { 
        document.getElementById('sideNav').style.width = '100%' ;
        document.getElementById('sideNav2').style.display = 'block' ;
@@ -44,7 +21,7 @@
      * fungsi untuk dark mode
      */
 
-     if (localStorage.getItem('theme') == 'dark')
+    if (localStorage.getItem('theme') == 'dark')
         darkMode(true);
 
     function darkMode(e) {
