@@ -299,11 +299,15 @@
         $('html, body').animate({scrollTop:0})
         });
 
-        if(localStorage.getItem('theme') == 'dark') {
-            document.getElementById('biUp').style.color = 'white';
-        };
 
-        </script>
         
+        if(document.body.classList.contains('dark-mode')) {
+            document.getElementById('biUp').style.color = 'white';
+        } else {
+            document.getElementById('biUp').style.color = '';
+        };
+        </script>
+
+
     </body>
 </html>

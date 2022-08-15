@@ -41,8 +41,8 @@
             iconBlack.hidden = true;
             iconWhite.hidden = false;
         } else {
-            elemen.setAttribute('class', '');
-            localStorage.removeItem('theme');
+            elemen.setAttribute('class', 'bg-light');
+            localStorage.removeItem('theme', 'bg-light');
             moon.hidden = false;
             sun.hidden = true;
             //ikon ganti

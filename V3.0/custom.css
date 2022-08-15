@@ -73,8 +73,8 @@
 }
 
 .card-panel {
-    width: 320px;
-    height: 210px;
+    width: 85%;
+    height: 30vh;
     position: inherit;
     margin: auto;
     margin-top: 3vh;
