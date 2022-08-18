@@ -135,11 +135,11 @@
         </div>
     </nav>
 
-    <main class="jumbotoron jumbotron-fluid">
+    <main class="jumbotoron jumbotron-fluid" id="carousel-lain">
 
-        <nav style="left: 1vw; position: fixed; top: 50%; ">
-            <div class="dot-indicators-lain">
-                <a href="#" onclick="linkSamping()"></a>
+        <nav class="" style="left: 1vw; position: fixed; top: 50%;" id="navDots">
+            <div class="dot-indicators-lain active">
+                <a href="#1"></a>
             </div>
             <div class="dot-indicators-lain">
                 <a href="#2"></a>
@@ -150,7 +150,7 @@
 
         </nav>
 
-        <section id="1" class="" style="background-image: url('lainnya/1.jpg');background-size: cover; height: 100vh; margin-top: 0;">
+        <section id="1" style="background-image: url('lainnya/1.jpg');background-size: cover; height: 100vh; margin-top: 0; transition: opacity 2s ease-in-out;">
             <div class="container d-sm-none d-none d-lg-flex">
                 <a class="navbar-brand font-weight-bold" style="text-decoration: none; padding-top: 8vh;" href="index.html">
                     <img src="iconWhite.png" alt="" width="50" height="50" id="iconWhite"/>
@@ -192,8 +192,8 @@
             </div>
         </section>
     
-        <section id="2" class="jumbotoron jumbotron-fluid" style="background-image: url('lainnya/2.jpg'); background-size: cover; height: 100vh;"></section>
-        <section id="3" class="jumbotoron jumbotron-fluid" style="background-image: url('lainnya/3.jpg'); background-size: cover; height: 100vh;"></section>
+        <section id="2" class="jumbotoron jumbotron-fluid" style="background-image: url('lainnya/2.jpg'); background-size: cover; height: 100vh; transition: opacity 2s ease-in-out;"></section>
+        <section id="3" class="jumbotoron jumbotron-fluid" style="background-image: url('lainnya/3.jpg'); background-size: cover; height: 100vh; transition: opacity 2s ease-in-out ; "></section>
 
     </main>
 
@@ -279,11 +279,45 @@
     
     function linkSamping() {
         var far = document.documentElement('html', 'body');
-
         far.scrollTop = 0;
-    }
+    };
 
+//    const navDots = document.getElementById('navDots');
+//    const dotLain = navDots.getElementsByClassName('dot-indicators-lain');
+//
+//    for (var n = 0; n < dotLain.length; n++) {
+//        dotLain[n].addEventListener("click", function() {
+//            var active = document.getElementsByClassName("active");
+//            active[0].className = active[0].className.replace(" active","");
+//            this.className += " active";
+//        });
+//    };
     
+            $(window).scroll(function () {
+                onScrollHandle();
+            });
+
+            function onScrollHandle() {
+                //Get current scroll position
+                var currentScrollPos = $(document).scrollTop();
+
+                //Iterate through all node
+                $('#navDots > div > a').each(function () {
+                    var curLink = $(this);
+                    var refElem = $(curLink.attr('href'));
+                    //Compare the value of current position and the every section position in each scroll
+                    if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+                        //Remove class active in all nav
+                        $('#top-nav > div').removeClass("active");
+                        //Add class active
+                        curLink.parent().addClass("active");
+                    }
+                    else {
+                        curLink.parent().removeClass("active");
+                    }
+                });
+            };
+
     </script>
 </body>
 
