@@ -233,7 +233,7 @@
 
 .imgzoom img {
     -webkit-transition: 0.6s ease;
-    transition: 0.4s ease;
+    transition: .5s ease;
 }
 
 .imgzoom-cont:hover .imgzoom img {
