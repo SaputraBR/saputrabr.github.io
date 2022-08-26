@@ -51,7 +51,7 @@
 }
 
 .bg-ensi {
-    background-image: url('/img/mount.jpg');
+    background-image: url('img/mount.jpg');
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
@@ -274,7 +274,7 @@
 }
 
 .title-header {
-    background-image: url('/img/Underwater.jpg');
+    background-image: url('img/Underwater.jpg');
     background-repeat: repeat;
     background-position: center;
     -webkit-background-clip: text;
