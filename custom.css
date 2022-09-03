@@ -221,6 +221,10 @@
     color: inherit;
 }
 
+.font-125 {
+    font-size: 1rem;
+}
+
 .imgzoom-cont {
     position: relative;
     overflow: hidden;
