@@ -267,7 +267,7 @@
 }
 
 .sidenav2 {
-    width: 60%;
+    width: 65%;
     height: 100%;
     opacity: 100%;
     overflow-x: hidden;
@@ -292,4 +292,12 @@
                     helvetica, arial, sans-serif;
     font-weight: 800;
     -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 575px) {
+    .col-575 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
 }
