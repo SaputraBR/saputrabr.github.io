@@ -121,7 +121,7 @@
 }
 
 .dark-mode #chat:hover, .dark-mode #close:hover,
-.dark-mode #biUp:hover,
+.dark-mode #ngeroll:hover,
 .dark-mode #sekrol:hover {
     color: rgb(204, 203, 203) !important;
 }
@@ -129,6 +129,7 @@
 .dark-mode #chat,
 .dark-mode #facebookSidenav,
 .dark-mode #instagramSidenav,
+.dark-mode #ngeroll,
 .dark-mode #sekrol,
 .dark-mode #twitterSidenav,
 .dark-mode #youtubeSidenav,
