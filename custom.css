@@ -178,6 +178,10 @@
     background: #3f4c57 !important;
 }
 
+.dark-mode .bg-komentar{
+    background: rgba(132, 132, 130, .4);
+}
+
 .dark-mode .btn-light:hover {
     color: #fff;
     background-color: #01aae8;
