@@ -62,6 +62,10 @@
     background: #3d3d3d;   
 }
 
+.bg-komentar{
+    background: rgb(235, 235, 235);
+}
+
 .bg-sky {
     background: #00d2ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -166,7 +170,7 @@
     border-radius: 50%;
 }
 
-
+.dark-mode #komentar,
 .dark-mode .bg-footer,
 .dark-mode .bg-sky,
 .dark-mode .card,
