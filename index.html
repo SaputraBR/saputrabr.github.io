@@ -294,6 +294,13 @@
             buttonTop.hidden = true;
             };
         };
+            
+        var rollBack = document.getElementById('rollBack');
+
+        rollBack.addEventListener('click', (e) => {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0})
+        });
         </script>
 
 
