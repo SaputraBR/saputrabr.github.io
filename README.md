@@ -1,2 +1,2 @@
-# saputrabr.github.io
+## saputrabr.github.io
 This is a frontend side project for my blog
